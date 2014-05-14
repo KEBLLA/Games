@@ -1,0 +1,18 @@
+// here we define our method using "this", before we even introduce bob
+var setAge = function (newAge) {
+  this.age = newAge;
+};
+// now we make bob
+var bob = new Object();
+bob.age = 30;
+// and down here we just use the method we already made
+bob.setAge = setAge;
+  
+// test of repitive use multiple times
+bob.setAge(10000000);
+
+//Get year of birth from current time
+bob.getYearOfBirth = function () {
+  return 2014 - bob.age;
+};
+console.log(bob.getYearOfBirth());
