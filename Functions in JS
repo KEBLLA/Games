@@ -17,6 +17,29 @@ bob.getYearOfBirth = function () {
 };
 console.log(bob.getYearOfBirth());
 // adding time as a variable
-time = function (x) {
-  return (x);
+var year = function (newYear) {
+  year = newYear;
+  return year;
   };
+// making new personell
+var avery = new Object();
+avery.age = 12;
+avery.setAge = setAge;
+// use with shapes
+var rectangle = new Object();
+rectangle.height = 3;
+rectangle.width = 4;
+// here is our method to set the height
+rectangle.setHeight = function (newHeight) {
+  this.height = newHeight;
+};
+// help by finishing this method
+rectangle.setWidth = function (newWidth) {
+    this.width = newWidth;
+};
+  
+
+// here change the width to 8 and height to 6 using our new methods
+rectangle.setHeight(6);
+rectangle.setWidth(8);
+
