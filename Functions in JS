@@ -33,13 +33,13 @@ rectangle.width = 4;
 rectangle.setHeight = function (newHeight) {
   this.height = newHeight;
 };
-// help by finishing this method
+// width method
 rectangle.setWidth = function (newWidth) {
     this.width = newWidth;
 };
   
 
-// here change the width to 8 and height to 6 using our new methods
+// here changed the width to 8 and height to 6 using our new methods
 rectangle.setHeight(6);
 rectangle.setWidth(8);
 
